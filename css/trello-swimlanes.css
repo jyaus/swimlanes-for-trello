@@ -1,0 +1,38 @@
+#board.swimlanes {
+    margin-top: 20px;
+    padding-left: 5px;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+.swimlanes .list-wrapper {
+    position: relative;
+    height: auto;
+    float: left;
+    margin-bottom: 3em;
+}
+
+.swimlanes .list-wrapper, 
+.swimlanes .list-wrapper:first-child {
+    margin-left: 5px;
+}
+
+.swimlanes .list-wrapper.swimlane-start {
+    clear: both;
+}
+
+.swimlanes .list-wrapper.swimlane-start:before {
+    content: attr(data-swimlane-title);
+    display: block;
+    position: absolute;
+    top: -1.5em;
+    left: 0;
+    z-index: 2;
+    min-width: 50%;
+    min-height: 1em;
+    padding: .2em .5em;
+    font-size: 1.2em;
+    color: #eee;
+    background: linear-gradient(to top right, rgba(20,40,60,1), rgba(40,60,80,.7));
+    border-top-left-radius: 5px;
+}

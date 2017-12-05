@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Trello Swimlanes",
+  "description": "Support arranging Trello lists into horizontal swimlanes.",
+  "version": "1.0",
+  "author": "Jeff Yaus",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "*://trello.com/b/*",
+    "tabs",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "css/trello-swimlanes.css"
+  ],
+  "page_action": {
+    "default_title": "Trello Swimlanes"
+  },
+  "commands": {
+    "_execute_page_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "MacCtrl+Shift+S"
+      }
+    }
+  }
+}

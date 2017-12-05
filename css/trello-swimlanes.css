@@ -30,9 +30,9 @@
     z-index: 2;
     min-width: 50%;
     min-height: 1em;
-    padding: .2em .5em;
+    padding: .2em 1em .2em .5em;
     font-size: 1.2em;
     color: #eee;
-    background: linear-gradient(to top right, rgba(20,40,60,1), rgba(40,60,80,.7));
+    background: linear-gradient(to right, rgba(20,40,60,1) 0% , rgba(40,60,80,.7) 80%, rgba(40,60,80,.3) 100%);
     border-top-left-radius: 5px;
 }

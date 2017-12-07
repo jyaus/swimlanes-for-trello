@@ -1,6 +1,10 @@
 Installation Instructions
 =========================
 
+From the Chrome Web Store
+-------------------------
+You can download and install the extension from the [Chrome Web Store - Trello Swimlanes](https://chrome.google.com/webstore/detail/trello-swimlanes/dfgkochbhfjgjjlniepamdfajllaaefa)
+
 From source
 -----------
 1. Clone the repository. 

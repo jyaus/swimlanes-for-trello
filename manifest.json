@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Trello Swimlanes",
   "description": "Support arranging Trello lists into horizontal swimlanes.",
-  "version": "1.0",
+  "version": "1.01",
   "author": "Jeff Yaus",
   "icons": {
     "48": "icon48.png",

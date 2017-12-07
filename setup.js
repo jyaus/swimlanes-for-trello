@@ -30,16 +30,23 @@ function findSwimlanes() {
             if (closestListWrapper) 
             {
                 closestListWrapper.classList.add('swimlane-start');
-                var laneTitle = headerNameValue.substr(headerNameValue.indexOf(laneIndicator)).replace(laneIndicator,''); 
-                if (laneTitle.length > 0)
-                {
-                    closestListWrapper.setAttribute('data-swimlane-title', laneTitle);
-                }            
+                var laneTitle = headerNameValue.substr(headerNameValue.indexOf(laneIndicator)).replace(laneIndicator,'') || " "; 
+                closestListWrapper.setAttribute('data-swimlane-title', laneTitle);
+                
+                if (closestListWrapper.previousSibling && !(closestListWrapper.previousSibling.classList.contains('swimlane-break'))) {
+                    var swimlaneBreak = document.createElement('div');
+                    swimlaneBreak.classList.add('swimlane-break');
+                    closestListWrapper.parentNode.insertBefore(swimlaneBreak, closestListWrapper);
+                }
             }
         } else {
             if (closestListWrapper) 
             {
                 closestListWrapper.classList.remove('swimlane-start');
+                if (closestListWrapper.previousSibling && (closestListWrapper.previousSibling.classList.contains('swimlane-break'))) {
+                    closestListWrapper.previousSibling.remove();
+                }
+                
             }
         }
     }

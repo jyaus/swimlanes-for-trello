@@ -1,15 +1,18 @@
 #board.swimlanes {
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-top: 3em;
     padding-left: 5px;
     overflow-x: visible;
-    overflow-y: visible;
+    overflow-y: auto;
 }
 
 .swimlanes .list-wrapper {
     position: relative;
     height: auto;
-    float: left;
-    margin-bottom: 3em;
+    margin-bottom: 5px;
 }
 
 .swimlanes .list-wrapper, 
@@ -17,8 +20,16 @@
     margin-left: 5px;
 }
 
-.swimlanes .list-wrapper.swimlane-start {
-    clear: both;
+.swimlane-break {
+    display: none;
+}
+
+.swimlanes .swimlane-break {
+    display: inline-block; 
+    flex-basis: 100%;
+    width: 0; 
+    height: 3em; 
+    overflow: hidden; 
 }
 
 .swimlanes .list-wrapper.swimlane-start:before {
@@ -30,7 +41,7 @@
     z-index: 2;
     min-width: 50%;
     min-height: 1em;
-    padding: .2em 1em .2em .5em;
+    padding: .25em 1em .2em .5em;
     font-size: 1.2em;
     color: #eee;
     background: linear-gradient(to right, rgba(20,40,60,1) 0% , rgba(40,60,80,.7) 80%, rgba(40,60,80,.3) 100%);

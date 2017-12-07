@@ -1,4 +1,4 @@
-Trello Swimlanes
+Swimlanes for Trello
 =======================
 
 Trello is a handy tool for keeping track of list items, but it limits you to a single row of lists. This lightweight, keep-it-simple extension for Trello allows you to create multiple horizontal "swimlanes" of lists.
@@ -11,8 +11,8 @@ Trello is a handy tool for keeping track of list items, but it limits you to a s
 
 Installation
 ------------
+You can download and install the extension from the [Chrome Web Store - Swimlanes for Trello](https://chrome.google.com/webstore/detail/trello-swimlanes/dfgkochbhfjgjjlniepamdfajllaaefa)
 ![Chrome Store badge](https://raw.githubusercontent.com/jyaus/trello-swimlanes/master/art/ChromeWebStore_Badge_v2_206x58.png)
-You can download and install the extension from the [Chrome Web Store - Trello Swimlanes](https://chrome.google.com/webstore/detail/trello-swimlanes/dfgkochbhfjgjjlniepamdfajllaaefa)
 
 To install from source instead, please see INSTALL.md in this directory.
 

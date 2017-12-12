@@ -11,7 +11,8 @@ Trello is a handy tool for keeping track of list items, but it limits you to a s
 
 Installation
 ------------
-You can download and install the extension from the [Chrome Web Store - Swimlanes for Trello](https://chrome.google.com/webstore/detail/swimlanes-for-trello/lhgcmlaedabaaaihmfdkldejjjmialgl) or [Firefox Add-ons]{(https://addons.mozilla.org/en-US/firefox/addon/swimlanes-for-trello/)
+You can download and install the extension from: the [Chrome Web Store - Swimlanes for Trello](https://chrome.google.com/webstore/detail/swimlanes-for-trello/lhgcmlaedabaaaihmfdkldejjjmialgl) or [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/swimlanes-for-trello/)
+
 ![Chrome Store badge](https://raw.githubusercontent.com/jyaus/trello-swimlanes/master/art/ChromeWebStore_Badge_v2_206x58.png)
 
 To install from source instead, please see INSTALL.md in this directory.

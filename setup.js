@@ -62,11 +62,14 @@ function findSwimlanes() {
 findSwimlanes();
 
 chrome.storage.sync.get('isInactive', function (result) {
-  if (result.isInactive) {
-    board.classList.remove(boardSwimlanesActiveClass);
-  } else  {
-    board.classList.add(boardSwimlanesActiveClass);
-  } 
+      try {
+          if (result.isInactive) {
+            board.classList.remove(boardSwimlanesActiveClass);
+          } else  {
+            board.classList.add(boardSwimlanesActiveClass);
+          } 
+      } catch (e) {
+          board.classList.add(boardSwimlanesActiveClass);
+      }
 });
-
 

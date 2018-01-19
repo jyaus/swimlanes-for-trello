@@ -1,6 +1,7 @@
 var cssFile = chrome.extension.getURL('css/trello-swimlanes.css'),
   board = document.getElementById('board'),
   laneIndicator = '\ud83c\udfca';
+  alternativeLaneIndicator = '|';
   boardSwimlanesActiveClass = 'swimlanes';
 
 function insertCss() {
@@ -24,13 +25,22 @@ function findSwimlanes() {
         var headerNameValue = headerName.value;
         var closestListWrapper = headerName.closest('.list-wrapper');
         
-        if (headerNameValue.indexOf(laneIndicator) > -1)
+        if ((headerNameValue.indexOf(laneIndicator) > -1) || (headerNameValue.indexOf(alternativeLaneIndicator) > -1))
         {
             swimlanesExist = true;
             if (closestListWrapper) 
             {
                 closestListWrapper.classList.add('swimlane-start');
-                var laneTitle = headerNameValue.substr(headerNameValue.indexOf(laneIndicator)).replace(laneIndicator,'') || " "; 
+                var laneTitle = ' '; 
+                if (headerNameValue.indexOf(laneIndicator) > -1)
+                {
+                    laneTitle = headerNameValue.substr(headerNameValue.indexOf(laneIndicator)).replace(laneIndicator,'');
+                }
+                if (headerNameValue.indexOf(alternativeLaneIndicator) > -1)
+                {
+                    laneTitle = headerNameValue.substr(headerNameValue.indexOf(alternativeLaneIndicator)).replace(alternativeLaneIndicator,'');
+                }
+                
                 closestListWrapper.setAttribute('data-swimlane-title', laneTitle);
                 
                 if (closestListWrapper.previousSibling && !(closestListWrapper.previousSibling.classList.contains('swimlane-break'))) {

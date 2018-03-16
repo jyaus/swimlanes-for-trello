@@ -1,8 +1,4 @@
 #board.swimlanes {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
     padding-top: 3em;
     padding-left: 5px;
     overflow-x: visible;
@@ -25,9 +21,8 @@
 }
 
 .swimlanes .swimlane-break {
-    display: inline-block; 
-    flex-basis: 100%;
-    width: 0; 
+    display: block; 
+    width: 100%;
     height: 3em; 
     overflow: hidden; 
 }

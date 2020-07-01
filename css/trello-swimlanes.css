@@ -5,6 +5,10 @@
     overflow-y: auto;
 }
 
+.list {
+    max-height: 50em;
+}
+
 .swimlanes .list-wrapper {
     position: relative;
     height: auto;

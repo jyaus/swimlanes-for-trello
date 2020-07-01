@@ -22,7 +22,10 @@
     "css/trello-swimlanes.css"
   ],
   "page_action": {
-    "default_title": "Swimlanes for Trello"
+    "default_title": "Swimlanes for Trello",
+    "default_icon": {
+      "48": "icon48.png"
+    }
   },
   "commands": {
     "_execute_page_action": {
